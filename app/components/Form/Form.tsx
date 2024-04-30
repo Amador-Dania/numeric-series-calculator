@@ -6,7 +6,7 @@ interface FormularioProps {
   setNumero: Dispatch<SetStateAction<string>>;
 }
 
-export default function Formulario({ numero, setNumero }: FormularioProps) {
+export default function Form({ numero, setNumero }: FormularioProps) {
   const [warningNotification, setwarningNotification] = useState("");
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
