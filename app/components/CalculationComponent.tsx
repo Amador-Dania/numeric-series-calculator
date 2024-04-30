@@ -10,6 +10,7 @@ export default function useCalculacion({ input }: useCalculacionProps) {
     const calculadora = new Calculo();
 
     const parsedInput = parseInt(input);
+
     if (isNaN(parsedInput)) {
       return 0;
     }

@@ -1,5 +1,4 @@
 import React from "react";
-import useCalculacion from "./CalculationComponent";
 
 interface ResultadoProps {
   numero: number;

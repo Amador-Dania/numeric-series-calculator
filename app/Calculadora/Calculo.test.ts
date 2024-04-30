@@ -3,137 +3,142 @@ import { expect, test, describe } from "vitest";
 import Calculo from "./Calculo";
 const calculadora = new Calculo();
 
-describe("Triangular Number Function", () => {
-  test("should return the correct value for the 1st term", () => {
+describe("Función de Números Triangulares", () => {
+  test("debería devolver el valor correcto para el primer término", () => {
     expect(calculadora.calcularNumeroTriangular(1)).toBe(1);
   });
 
-  test("should return the correct value for the 2nd term", () => {
+  test("debería devolver el valor correcto para el segundo término", () => {
     expect(calculadora.calcularNumeroTriangular(2)).toBe(3);
   });
 
-  test("should return the correct value for the 3rd term", () => {
+  test("debería devolver el valor correcto para el tercer término", () => {
     expect(calculadora.calcularNumeroTriangular(3)).toBe(6);
   });
 
-  test("should return the correct value for the 4th term", () => {
+  test("debería devolver el valor correcto para el cuarto término", () => {
     expect(calculadora.calcularNumeroTriangular(4)).toBe(10);
   });
 
-  test("should return the correct value for the 5th term", () => {
+  test("debería devolver el valor correcto para el quinto término", () => {
     expect(calculadora.calcularNumeroTriangular(5)).toBe(15);
   });
 
-  test("should return the correct value for the 10th term", () => {
+  test("debería devolver el valor correcto para el décimo término", () => {
     expect(calculadora.calcularNumeroTriangular(10)).toBe(55);
   });
 
-  test("should return the correct value for the 100th term", () => {
+  test("debería devolver el valor correcto para el término número 100", () => {
     expect(calculadora.calcularNumeroTriangular(100)).toBe(5050);
   });
 });
 
-describe("Prime Number Function", () => {
-  test("should return the correct value for the 1st prime", () => {
+describe("Función de Números Primos", () => {
+  test("debería devolver el valor correcto para el primer número primo", () => {
     expect(calculadora.calcularNumeroPrimo(1)).toBe(2);
   });
 
-  test("should return the correct value for the 2nd prime", () => {
+  test("debería devolver el valor correcto para el segundo número primo", () => {
     expect(calculadora.calcularNumeroPrimo(2)).toBe(3);
   });
 
-  test("should return the correct value for the 3rd prime", () => {
+  test("debería devolver el valor correcto para el tercer número primo", () => {
     expect(calculadora.calcularNumeroPrimo(3)).toBe(5);
   });
 
-  test("should return the correct value for the 4th prime", () => {
+  test("debería devolver el valor correcto para el cuarto número primo", () => {
     expect(calculadora.calcularNumeroPrimo(4)).toBe(7);
   });
 
-  test("should return the correct value for the 5th prime", () => {
+  test("debería devolver el valor correcto para el quinto número primo", () => {
     expect(calculadora.calcularNumeroPrimo(5)).toBe(11);
   });
 
-  test("should return the correct value for the 10th prime", () => {
+  test("debería devolver el valor correcto para el noveno número primo", () => {
+    expect(calculadora.calcularNumeroPrimo(9)).toBe(23);
+  });
+
+  test("debería devolver el valor correcto para el décimo número primo", () => {
     expect(calculadora.calcularNumeroPrimo(10)).toBe(29);
   });
 
-  test("should return the correct value for the 100th prime", () => {
+  test("debería devolver el valor correcto para el centésimo número primo", () => {
     expect(calculadora.calcularNumeroPrimo(100)).toBe(541);
   });
 });
-describe("Fibonacci Number Function", () => {
-  test("should return the correct value for the 1st Fibonacci number", () => {
+
+describe("Función de Números Fibonacci", () => {
+  test("debería devolver el valor correcto para el primer número Fibonacci", () => {
     expect(calculadora.calcularFibonacci(1)).toBe(1);
   });
 
-  test("should return the correct value for the 2nd Fibonacci number", () => {
+  test("debería devolver el valor correcto para el segundo número Fibonacci", () => {
     expect(calculadora.calcularFibonacci(2)).toBe(1);
   });
 
-  test("should return the correct value for the 3rd Fibonacci number", () => {
+  test("debería devolver el valor correcto para el tercer número Fibonacci", () => {
     expect(calculadora.calcularFibonacci(3)).toBe(2);
   });
 
-  test("should return the correct value for the 4th Fibonacci number", () => {
+  test("debería devolver el valor correcto para el cuarto número Fibonacci", () => {
     expect(calculadora.calcularFibonacci(4)).toBe(3);
   });
 
-  test("should return the correct value for the 5th Fibonacci number", () => {
+  test("debería devolver el valor correcto para el quinto número Fibonacci", () => {
     expect(calculadora.calcularFibonacci(5)).toBe(5);
   });
 
-  test("should return the correct value for the 10th Fibonacci number", () => {
+  test("debería devolver el valor correcto para el décimo número Fibonacci", () => {
     expect(calculadora.calcularFibonacci(10)).toBe(55);
   });
 
-  test("should return the correct value for the 15th Fibonacci number", () => {
+  test("debería devolver el valor correcto para el decimoquinto número Fibonacci", () => {
     expect(calculadora.calcularFibonacci(15)).toBe(610);
   });
 });
 
 describe("SerieCalculator", () => {
-  test("should return the correct value for the 1st term", () => {
+  test("debería devolver el valor correcto para el primer término", () => {
     expect(calculadora.serie(1)).toBe(-4);
   });
 
-  test("should return the correct value for the 2st term", () => {
+  test("debería devolver el valor correcto para el segundo término", () => {
     expect(calculadora.serie(2)).toBe(-2);
   });
 
-  test("should return the correct value for the 3st term", () => {
+  test("debería devolver el valor correcto para el tercer término", () => {
     expect(calculadora.serie(3)).toBe(-5);
   });
 
-  test("should return the correct value for the 4st term", () => {
+  test("debería devolver el valor correcto para el cuarto término", () => {
     expect(calculadora.serie(4)).toBe(-12);
   });
 
-  test("should return the correct value for the 5st term", () => {
+  test("debería devolver el valor correcto para el quinto término", () => {
     expect(calculadora.serie(5)).toBe(-18);
   });
 
-  test("should return the correct value for the 6st term", () => {
+  test("debería devolver el valor correcto para el sexto término", () => {
     expect(calculadora.serie(6)).toBe(-35);
   });
 
-  test("should return the correct value for the 7st term", () => {
+  test("debería devolver el valor correcto para el séptimo término", () => {
     expect(calculadora.serie(7)).toBe(-58);
   });
 
-  test("should return the correct value for the 8st term", () => {
+  test("debería devolver el valor correcto para el octavo término", () => {
     expect(calculadora.serie(8)).toBe(-106);
   });
 
-  test("should return the correct value for the 9st term", () => {
+  test("debería devolver el valor correcto para el noveno término", () => {
     expect(calculadora.serie(9)).toBe(-193);
   });
 
-  test("should return the correct value for the 55st term", () => {
+  test("debería devolver el valor correcto para el décimo término", () => {
     expect(calculadora.serie(10)).toBe(-322);
   });
 
-  test("should return the correct value for the -1 term", () => {
+  test("debería devolver el valor correcto para el término -1", () => {
     expect(calculadora.serie(-1)).toBe(0);
   });
 });
