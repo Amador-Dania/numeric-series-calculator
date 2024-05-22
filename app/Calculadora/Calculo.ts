@@ -53,11 +53,11 @@ class Calculo {
     }
 
     const terminoTriangular = this.calcularNumeroTriangular(n + 2);
-    console.log({ terminoTriangular });
+    // console.log({ terminoTriangular });
     const terminoPrimo = this.calcularNumeroPrimo(n + 1);
-    console.log({ terminoPrimo });
+    // console.log({ terminoPrimo });
     const terminoFib = this.calcularFibonacci(n);
-    console.log({ terminoFib });
+    // console.log({ terminoFib });
     return 2 * terminoTriangular - 3 * terminoPrimo - 7 * terminoFib;
   }
 }
